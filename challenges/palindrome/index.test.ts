@@ -3,7 +3,7 @@ import { isPalindrome } from '.';
 
 describe("isPalindrome", () => {
 
-    test("Is a palindrome", () => {
+    describe("Is a palindrome", () => {
         const palindromicWords = [
             "racecar",
             "wow",
@@ -26,14 +26,17 @@ describe("isPalindrome", () => {
             "aa'bab^a*a",
             "aa",
             "a",
+            "12321",
         ];
 
         palindromicWords.forEach((word) => {
-            expect(isPalindrome(word)).toBe(true);
+            test(word, () => {
+                expect(isPalindrome(word)).toBe(true);
+            });
         });
     });
 
-    test("Is not a palindrome", () => {
+    describe("Is not a palindrome", () => {
         const nonPalindromicWords =[
             "word",
             "racecars",
@@ -45,11 +48,14 @@ describe("isPalindrome", () => {
             "aababaab",
             "ab",
             "",
-            "()()()()(£$%%&  b"
+            "()()()()(£$%%&  ",
+            "112"
         ]
 
         nonPalindromicWords.forEach((word) => {
-            expect(isPalindrome(word)).toBe(false);
+            test(word, () => {
+                expect(isPalindrome(word)).toBe(false);
+            });
         });
     })
 });
