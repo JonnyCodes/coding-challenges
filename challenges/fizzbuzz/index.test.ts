@@ -20,4 +20,10 @@ describe("Fizz Buzz", () => {
             expect(fizzBuzz(val)).toBe("FizzBuzz");
         });
     });
+
+    test("None Fizz, Buzz or FizzBuzz numbers", () => {
+        [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19, 22, 23, 26, 28, 29, 31, 32, 34, 37, 38].forEach((val) => {
+            expect(fizzBuzz(val)).toBe(val);
+        });
+    });
 });
