@@ -8,7 +8,7 @@
  * otherwise return the number
 */
 
-export const FizzBuzz = (input: number): string | number => {
+export const fizzBuzz = (input: number): string | number => {
 
     return;
 }

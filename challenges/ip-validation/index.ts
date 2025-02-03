@@ -6,7 +6,7 @@
  * 
  * Write a function that takes a string as an input
  * return true if it's a IPv4 value
- * return false if it's a IPv4 value
+ * return false if it's not a IPv4 value
 */
 
 export const isIPv4 = (input: string): boolean => {
@@ -23,7 +23,7 @@ export const isIPv4 = (input: string): boolean => {
  * 
  * Write a function that takes a string as an input
  * return true if it's a IPv6 value
- * return false if it's a IPv6 value
+ * return false if it's not a IPv6 value
 */
 
 export const isIPv6 = (input: string): boolean => {
